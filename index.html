@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+
+
+<html>
+	
+
+
+<head>
+
+<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+	<div class="jumbotron text-center">
+		<h1>Train Times</h1>
+		<!-- <h4>A Comprehensive Directory</h4> -->
+		<img src="train.gif">
+	</div>
+
+<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading">		
+			Current Train Schedule
+		</div>
+
+				<table class="table table-striped table-hover" id="trainTable">
+						<thead>
+							<tr>
+								<th>Train Name</th>
+								<th>Destination</th>
+								<th>Frequency (Min)</th>
+								<th>Next Arrival</th>
+								<th>Minutes Away</th>
+								
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+</div>
+
+<div class="row">
+	<div class="panel panel-default">
+		<div class="panel-heading">		
+			Add Train
+		</div>
+
+		<div class="panel-body">
+		
+			<form>
+
+				<div class="form-group">
+					<label for="name">Train Name</label>
+					<input type="text" class="form-control" id="trainName" placeholder="Input field">
+				</div>
+			
+				<div class="form-group">
+					<label for="role">Destination</label>
+					<input type="text" class="form-control" id="destination" placeholder="Input field">
+				</div>
+
+				<div class="form-group">
+					<label for="dates">First Train Time (HH:mm) Military Time</label>
+					<input type="text" class="form-control" id="firstTime" placeholder="(HH:mm) Military Time">
+				</div>
+
+				<div class="form-group">
+					<label for="rate">Frequency (Minutes)</label>
+					<input type="text" class="form-control" id="frequency" placeholder="Input field">
+				</div>	
+			
+				<button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+				
+			</form>
+
+			
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+</div>
+
+</body>
+
+
+<!-- Latest compiled and minified CSS & JS -->
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="logic.js"></script>
+	
+</body>
+</html>
+
+
